@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      >
+    <h:head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:fieldset legend="Datos Empleados" toggleable="true">
+                <p:dataTable value="#{mbEmpleado.lstEmpleado}" var="e" >
+                    <p:column headerText="Id">
+                        <h:outputText value="#{e.id}" />  
+                    </p:column>
+                    <p:column headerText="Nombre">
+                        <h:outputText value="#{e.nombre}" />  
+                    </p:column>
+                    <p:column headerText="Apellido">
+                        <h:outputText value="#{e.apellido}" />  
+                    </p:column>
+                    <p:column headerText="egmail">
+                        <h:outputText value="#{e.egmail}" />  
+                    </p:column>
+                    <p:column headerText="Telefono">
+                        <h:outputText value="#{e.telefono}" />  
+                    </p:column>
+                </p:dataTable>
+            </p:fieldset> 
+        </h:form>
+    </h:body>
+</html>

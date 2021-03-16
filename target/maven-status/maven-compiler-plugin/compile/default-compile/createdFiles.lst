@@ -1,0 +1,5 @@
+com\stt\controller\mbEmpleado.class
+com\stt\facade\PermisosFacade.class
+com\stt\facade\AbstractFacade.class
+com\stt\facade\EmpleadoFacade.class
+com\stt\facade\PuestoFacade.class
